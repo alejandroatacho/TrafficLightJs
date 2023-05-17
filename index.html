@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="scss/styles.css" />
     <title>5/17/2023</title>
   </head>
   <body>
+    <div class="navbar">
+      <h1>Traffic Light Control</h1>
+      <nav>
+        <a href="#traffic-light">Traffic Light</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
     <span class="container">
       <h4>Change the traffic light:</h4>
       <input id="touch_me_kek" type="text" />
@@ -16,8 +24,29 @@
         <div id="color_2" class="light" style="background-color: yellow"></div>
         <div id="color_3" class="light" style="background-color: red"></div>
       </div>
+      <table class="cheat_sheet">
+        <tr>
+          <th>Colors (input)</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>green</td>
+          <td>Means true</td>
+        </tr>
+        <tr>
+          <td>red</td>
+          <td>Means false</td>
+        </tr>
+        <tr>
+          <td>all</td>
+          <td>Show all of the colors</td>
+        </tr>
+      </table>
     </span>
-
-    <script src="light_switcher.js"></script>
+    <br /><br />
+    <div class="footer">
+      <p>&copy; 2023 Hinamizawa</p>
+    </div>
+    <script src="js/light_switcher.js"></script>
   </body>
 </html>

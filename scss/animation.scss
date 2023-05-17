@@ -1,0 +1,66 @@
+@keyframes traffic-light-animation {
+  0% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+    box-shadow: 0 0 10px 10px lighten(blue, 0.3);
+  }
+  25% {
+    opacity: 1;
+    box-shadow: 0 0 10px 10px lighten(blue, 0.5);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 10px 10px lighten(blue, 0.9);
+  }
+  62% {
+    opacity: 1;
+    box-shadow: 0 0 10px 10px lighten(blue, 0.5);
+  }
+  75% {
+    opacity: 1;
+    box-shadow: 0 0 10px 10px lighten(blue, 0.3);
+  }
+
+  100% {
+    opacity: 1;
+    box-shadow: none !important;
+  }
+}
+
+@keyframes red-light-animation {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 10px 10px darken(red, 0.3);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 20px 20px lighten(red, 0.5);
+  }
+}
+
+@keyframes yellow-light-animation {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 10px 10px darken(yellow, 0.3);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 20px 20px lighten(yellow, 0.5);
+  }
+}
+
+@keyframes green-light-animation {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 10px 10px darken(green, 0.3);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 20px 20px lighten(green, 0.5);
+  }
+}

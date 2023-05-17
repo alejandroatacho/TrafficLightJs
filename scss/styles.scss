@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  background-color: lighten(#333333a4, 4.3);
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+#traffic-light {
+  width: 100px;
+  height: 300px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 33%;
+  animation: traffic-light-animation 3s forwards;
+  -webkit-animation: traffic-light-animation 3s forwards;
+}
+.light {
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  border-radius: 50%;
+  /* display: none; */
+  visibility: hidden;
+}
+
+#color_1 {
+  animation: green-light-animation 3s infinite;
+}
+
+#color_2 {
+  animation: yellow-light-animation 3s infinite;
+  animation-delay: 1s;
+}
+
+#color_3 {
+  animation: red-light-animation 3s infinite;
+  animation-delay: 2s;
+}
+
+@import "table";
+@import "animation";
+@import "blade";
